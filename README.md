@@ -1,5 +1,5 @@
 # CurlNexam
-Easly download exams from "passnexam.com"
+Easly download exams from "passnexam.com". Currently only supports AZ-900
 ## Usage
 Download the repo with:
 ```bash
@@ -17,6 +17,11 @@ Then start the server using:
 ```bash
 python3 AZ-900/start.py
 ```
+or specify a custom port with:
+```bash
+python3 AZ-900/start.py <port-number>
+```
+
 Freely browse the exam pages at:
 ```bash
 http://localhost:1234
