@@ -2,7 +2,7 @@ import http.server
 import socketserver
 import os
 
-PORT = 8000
+PORT = 1234
 DIRECTORY = "pages"
 
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
