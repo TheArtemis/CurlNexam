@@ -1,7 +1,5 @@
 # CurlNexam
-
-## Description
-Package to easily download exams from "passnexam.com"
+Easly download exams from "passnexam.com"
 ## Usage
 Download the repo with:
 ```bash
