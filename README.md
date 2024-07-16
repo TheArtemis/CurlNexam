@@ -13,7 +13,11 @@ First download the pages with:
 ```bash
 python3 AZ-900/download.py
 ```
-Then start the server to browse the exam:
+Then start the server using:
 ```bash
 python3 AZ-900/start.py
+```
+Freely browse the exam pages at:
+```bash
+http://localhost:1234
 ```
