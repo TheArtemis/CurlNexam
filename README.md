@@ -1,6 +1,8 @@
-# Description
+#CurlNexam
+
+## Description
 Package to easily download exams from "passnexam.com"
-# Usage
+## Usage
 To download pages use:
 ```bash
 python3 AZ-900/download.py
