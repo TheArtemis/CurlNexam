@@ -11,7 +11,7 @@ Move to the working directory:
 ```bash
 cd CurlNexam
 ```
-First download pages with:
+First download the pages with:
 ```bash
 python3 AZ-900/download.py
 ```
