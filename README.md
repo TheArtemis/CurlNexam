@@ -13,6 +13,10 @@ To see the currently supported exams you can type:
 ```bash
 ls -d */ | sed 's#/##'
 ```
+If necessary use the following command to make the script executable:
+```bash
+chmod +x start.sh
+```
 When opening for the first time an exam run the command:
 ```bash
 ./start.sh <exam_name> -d
