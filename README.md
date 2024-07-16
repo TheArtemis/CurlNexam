@@ -9,20 +9,24 @@ Move to the working directory:
 ```bash
 cd CurlNexam
 ```
-First download the pages with:
+To see the currently supported exams you can type:
 ```bash
-python3 AZ-900/download.py
+ls -d */ | sed 's#/##'
 ```
-Then start the server using:
+When opening for the first time an exam run the command:
 ```bash
-python3 AZ-900/start.py
+./start.sh <exam_name> -d
 ```
-or specify a custom port with:
-```bash
-python3 AZ-900/start.py <port-number>
-```
+**Note**: This command also starts the server.
 
-Freely browse the exam pages at:
+Any other time you need to open an already initialized exam you can use the following command, specifying a port number if desired:
 ```bash
-http://localhost:1234
+./start.sh <exam_name> -p <port_number>
 ```
+Freely browse the exam pages at the following address:
+```bash
+http://localhost:<port_number>
+```
+The default port number is ```1234```.
+
+**Happy Studying!**
