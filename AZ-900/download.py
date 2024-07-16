@@ -3,7 +3,7 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 
 NUM_PAGES = 39
-PAGES_FOLDER = "pages"
+PAGES_FOLDER = "AZ-900/pages"
 AZ_900_URL = "https://www.passnexam.com/microsoft/az-900"
 
 def download_pages():
@@ -14,7 +14,7 @@ def download_pages():
         response = subprocess.run(["curl", url], capture_output=True, text=True)
         if response.returncode == 0:
             print(f"Downloaded page {page_num} from {url}")
-            with open(f"AZ-900/{PAGES_FOLDER}/{page_num}.html", "w") as file:
+            with open(f"{PAGES_FOLDER}/{page_num}.html", "w") as file:
                 file.write(response.stdout)
         else:
             print(f"Error downloading page {page_num}: {response.stderr}")
@@ -23,8 +23,8 @@ def download_pages():
         executor.map(download_page, range(1, NUM_PAGES))
 
     print("All pages have been downloaded successfully.")
-
-    with open(os.path.join(f"AZ-900/{PAGES_FOLDER}", "index.html"), "w") as index_file:
+    
+    with open(os.path.join(f"{PAGES_FOLDER}", "index.html"), "w") as index_file:
         index_file.write("""
         <html>
         <head>
