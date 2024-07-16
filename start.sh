@@ -5,7 +5,7 @@ usage() {
   echo "Usage: $0 <directory> [-download | -d] [-p port | -port port] [-h | --help]"
   echo
   echo "Arguments:"
-  echo "  <directory>        The desired exam course to see"
+  echo "  <directory>        The desired exam."
   echo
   echo "Options:"
   echo "  -download, -d      Execute download.py and start.py."
